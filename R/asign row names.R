@@ -1,7 +1,10 @@
 library(readr)
-data<-read.csv("C:/Users/Deden/Downloads/data_frame_R.csv",row.names = "Kabupaten")
+urlfile = "https://raw.githubusercontent.com/dedenistiawan/Dataset/main/BDT.csv"
+Data<-read.csv(url(urlfile), row.names = "Kabupaten")
+
+#data<-read.csv("D:/My Drive/deden-research/Dataset/BDT.csv",row.names = "Kabupaten")
 
 library(ggplot2)
 library(factoextra)
-distance <- get_dist(data)
+distance <- get_dist(Data)
 fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
