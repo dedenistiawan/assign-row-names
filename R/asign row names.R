@@ -3,7 +3,6 @@ urlfile = "https://raw.githubusercontent.com/dedenistiawan/Dataset/main/BDT.csv"
 Data<-read.csv(url(urlfile), row.names = "Kabupaten")
 
 #data<-read.csv("D:/My Drive/deden-research/Dataset/BDT.csv",row.names = "Kabupaten")
-#coba
 
 library(ggplot2)
 library(factoextra)
